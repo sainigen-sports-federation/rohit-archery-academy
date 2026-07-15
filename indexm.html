@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sainigen Sports Federation</title>
+<meta name="description" content="Sainigen Sports Federation - Rohit Archery Academy provides professional archery coaching for beginners, intermediate and advanced players.">
+
+<meta name="keywords" content="Archery Academy, Rohit Archery Academy, Sainigen Sports Federation, Archery Coaching Pathankot">
+
+<link rel="icon" href="Logo.png">
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+
+nav{
+    background:#003366;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:12px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+h1,h2,p{
+    padding-left:20px;
+}
+.hero{
+    background: linear-gradient(135deg,#003366,#0077cc);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    margin:0;
+    font-size:40px;
+}
+
+.hero p{
+    font-size:20px;
+    margin:15px 0;
+}
+
+.hero button{
+    background:#ffcc00;
+    color:#003366;
+    border:none;
+    padding:12px 25px;
+    font-size:18px;
+    border-radius:30px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.about{
+    padding:40px 20px;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+.about h2{
+    color:#003366;
+    font-size:32px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.6;
+    color:#444;
+}
+.courses{
+    padding:50px 20px;
+    background:#ffffff;
+    text-align:center;
+}
+
+.courses h2{
+    color:#003366;
+    font-size:32px;
+}
+
+.course-card{
+    background:#f5f5f5;
+    margin:20px auto;
+    padding:20px;
+    max-width:320px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+
+.course-card h3{
+    color:#003366;
+}
+.gallery{
+    padding:50px 20px;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+.gallery h2{
+    color:#003366;
+    font-size:32px;
+}
+
+.gallery-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+.gallery-grid img{
+    width:300px;
+    max-width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.08);
+}
+.contact{
+    padding:40px 20px;
+    text-align:center;
+    background:#003366;
+    color:white;
+}
+
+.contact h2{
+    font-size:32px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:12px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+.register{
+    padding:50px 20px;
+    text-align:center;
+    background:#fff;
+}
+
+.register h2{
+    color:#003366;
+    font-size:32px;
+}
+
+form{
+    max-width:400px;
+    margin:auto;
+}
+
+input,select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+form button{
+    background:#003366;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    font-size:18px;
+    cursor:pointer;
+}
+.achievements{
+    padding:50px 20px;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+.achievements h2{
+    color:#003366;
+    font-size:32px;
+}
+
+.achievement-box{
+    display:inline-block;
+    width:280px;
+    margin:15px;
+    padding:20px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.achievement-box h3{
+    color:#003366;
+}
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin-bottom:20px;
+    background:white;
+    padding:10px;
+}
+@media(max-width:600px){
+
+nav a{
+    display:block;
+    margin:10px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.course-card{
+    width:90%;
+}
+
+.gallery-grid img{
+    width:90%;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+}
+
+}
+.fees{
+    padding:50px 20px;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+.fees h2{
+    color:#003366;
+    font-size:32px;
+}
+
+.fee-card{
+    display:inline-block;
+    width:200px;
+    margin:15px;
+    padding:20px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.fee-card h3{
+    color:#003366;
+}
+
+.fee-card p{
+    font-size:24px;
+    font-weight:bold;
+}
+.records{
+    padding:50px 20px;
+    text-align:center;
+    background:white;
+}
+
+.records h2{
+    color:#003366;
+    font-size:32px;
+}
+
+.record-card{
+    display:inline-block;
+    width:250px;
+    margin:15px;
+    padding:20px;
+    background:#f5f5f5;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.record-card h3{
+    color:#003366;
+}
+.social{
+    padding:40px 20px;
+    text-align:center;
+    background:#003366;
+    color:white;
+}
+
+.social h2{
+    font-size:32px;
+}
+
+.social a{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    background:white;
+    color:#003366;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+footer h3{
+    color:#ffcc00;
+    font-size:26px;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+}
+
+.footer-links a:hover{
+    color:#ffcc00;
+}
+</style>
+</head>
+
+<body>
+  <nav>
+  <a href="#home">Home</a>
+  <a href="#">About</a>
+  <a href="#">Academies</a>
+  <a href="#">Gallery</a>
+  <a href="#">Contact</a>
+</nav>
+<div class="hero" id="home">
+    <img src="Logo.png" class="logo" alt="Academy Logo">
+
+    <h1>Sainigen Sports Federation</h1>
+    <p>Building Champions Through Sports</p>
+    <a href="https://wa.me/917039248003">
+    <button>Join Now</button>
+</a>
+</div>
+
+<h2>🏹 Rohit Archery Academy</h2>
+<p>Professional Archery Coaching</p>
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        Sainigen Sports Federation is dedicated to promoting sports and developing talented athletes.
+        Rohit Archery Academy provides professional coaching for beginners, intermediate and advanced archers.
+    </p>
+</section>
+<section class="courses" id="courses">
+  <h2>Our Courses</h2>
+
+  <div class="course-card">
+    <h3>🏹 Beginner</h3>
+    <p>Basic Archery Training</p>
+  </div>
+
+  <div class="course-card">
+    <h3>🎯 Intermediate</h3>
+    <p>Competition Preparation</p>
+  </div>
+
+  <div class="course-card">
+    <h3>🏆 Advanced</h3>
+    <p>National & State Level Training</p>
+  </div>
+</section>
+<section class="fees">
+    <h2>Fee Structure</h2>
+
+    <div class="fee-card">
+        <h3>1 Month</h3>
+        <p>₹3000</p>
+    </div>
+
+    <div class="fee-card">
+        <h3>3 Months</h3>
+        <p>₹8000</p>
+    </div>
+
+    <div class="fee-card">
+        <h3>6 Months</h3>
+        <p>₹16000</p>
+    </div>
+
+    <div class="fee-card">
+        <h3>12 Months</h3>
+        <p>₹32000</p>
+    </div>
+</section>
+<section class="news">
+    <h2>Latest Updates</h2>
+
+    <div class="news-card">
+        <h3>📢 Admission Open</h3>
+        <p>New batches started for Beginner, Intermediate and Advanced archers.</p>
+    </div>
+
+    <div class="news-card">
+        <h3>🏹 Competition Preparation</h3>
+        <p>Special training available for State and National level competitions.</p>
+    </div>
+
+    <div class="news-card">
+        <h3>🎯 Trial Class</h3>
+        <p>Join our academy and start your archery journey.</p>
+    </div>
+</section>
+<section class="records">
+    <h2>Player Achievements</h2>
+
+    <div class="record-card">
+        <h3>🥇 Gold Medals</h3>
+        <p>State & District Level Championships</p>
+    </div>
+
+    <div class="record-card">
+        <h3>🥈 Silver Medals</h3>
+        <p>Outstanding Performance in Competitions</p>
+    </div>
+
+    <div class="record-card">
+        <h3>🥉 Bronze Medals</h3>
+        <p>Developing Future Champions</p>
+    </div>
+</section>
+<section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery-grid">
+        <img src="Logo.png" alt="Academy Logo">
+        <img src="Akshsir.png" alt="Archery Training">
+        <img src="Star.jpg" alt="Competition">
+        <img src="Competition.webp" alt="competition">
+    </div>
+</section>
+<section class="social">
+    <h2>Follow Us</h2>
+
+    <a href="https://www.instagram.com/olympicmedalmportsacademyptk?igsh=MWdyanpiNWN2cGFvMA==">Instagram</a>
+    <a href="https://www.facebook.com/share/1CqwBdQEFW/?mibextid=wwXIfr">Facebook</a>
+    <a href="https://wa.me/917039248003">WhatsApp</a>
+</section>
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>🏹 Rohit Archery Academy</p>
+    <p>📍 S.R.P.A. Aadarsh Bhartiya College, Pathankot</p>
+    <p>📞 7039248003</p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/917039248003">
+    WhatsApp
+</a>
+<footer>
+    <h3>Sainigen Sports Federation</h3>
+
+    <p>🏹 Rohit Archery Academy</p>
+    <p>📍 S.R.P.A. Aadarsh Bhartiya College, Pathankot</p>
+    <p>📞 7039248003</p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <p>© 2026 All Rights Reserved</p>
+</footer>
+<section class="register">
+    <h2>Join Our Academy</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="number" placeholder="Your Age" required>
+        <input type="tel" placeholder="Mobile Number" required>
+
+        <select>
+            <option>Select Course</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+
+        <button type="submit">Register Now</button>
+    </form>
+</section>
+<section class="achievements">
+    <h2>Our Achievements</h2>
+
+    <div class="achievement-box">
+        <h3>🏆 State Level Players</h3>
+        <p>Training athletes for state and national competitions.</p>
+    </div>
+
+    <div class="achievement-box">
+        <h3>🥇 Medal Winners</h3>
+        <p>Dedicated coaching for championship performance.</p>
+    </div>
+
+    <div class="achievement-box">
+        <h3>🎯 Professional Training</h3>
+        <p>Beginner to advanced level archery coaching.</p>
+    </div>
+</section>
+</body>
+</html>
